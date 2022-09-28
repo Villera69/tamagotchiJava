@@ -10,6 +10,11 @@ public class Tamagotchi {
     Random generator;
     public String name;
 
+    public Tamagotchi() {
+        generator = new Random();
+        isAlive = true;
+    }
+
     public void Tick() {
         hunger++;
         boredom++;
